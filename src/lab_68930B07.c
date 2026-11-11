@@ -12,7 +12,13 @@ Re-mould it nearer to the Heart's Desire!";
 
 int strindex(const char source[], char pattern[])
 {
-    // TODO: write your code here
+    char *res = strstr((char*)source, pattern);
+    if ( res != NULL )
+    {
+        return ( res-source);
+    }
+    else
+        return -1;
 }
 
 // DO NOT change the code below
